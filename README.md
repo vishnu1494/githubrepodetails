@@ -19,7 +19,7 @@ This application REST API will return the GitHub Repository information for the 
 
 This REST API will return the github repository details for the user which passed as request param.
 
-Method : GET
-Url    : /gitrepoinfo/api/v1/getuserrepodetails
-Params : userid=<<>>
+#### Method : GET
+#### Url    : /gitrepoinfo/api/v1/getuserrepodetails
+#### Params : userid=<<>>
 
