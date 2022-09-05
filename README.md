@@ -3,6 +3,12 @@
 
 This application REST API will return the GitHub Repository information for the given user.
 
+## Technology Used
+* OpenJDDK8
+* Spring Boot 2.7.3 (with Spring Web MVC)
+* Maven 3.6.2
+* Swagger UI
+* Actuator
 
 ## Default Endpoints
 
