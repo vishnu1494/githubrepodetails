@@ -4,7 +4,7 @@
 This application REST API will return the GitHub Repository information for the given user.
 
 
-### Default Endpoints
+## Default Endpoints
 
 | Method | Url | Decription |
 | ------ | --- | ---------- |
@@ -12,9 +12,9 @@ This application REST API will return the GitHub Repository information for the 
 | GET    |/swagger-ui/index.html | Swagger information |
 
 
-### REST API
+## REST API
 
-1) getuserrepodetails
+### getuserrepodetails
 --------------------------
 
 This REST API will return the github repository details for the user which passed as request param.
