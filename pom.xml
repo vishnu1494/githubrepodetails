@@ -16,6 +16,9 @@
 	<description>Project for Github Repository Information</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<runJunitSuite>**/JunitTestSuite.class</runJunitSuite>
+		<runIntegrationSuite>**/IntegrationTestSuite.class</runIntegrationSuite>
+		<runAllSuite>**/AllTestSuite.class</runAllSuite>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -53,19 +56,16 @@
 			<artifactId>httpclient</artifactId>
 			<version>4.4.1</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpcore</artifactId>
 			<version>4.4.3</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 			<version>2.13.3</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -85,6 +85,15 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<includes>
+						<include>${runAllSuite}</include>
+					</includes>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
