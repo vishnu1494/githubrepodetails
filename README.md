@@ -23,3 +23,6 @@ This REST API will return the github repository details for the user which passe
 #### Url    : /gitrepoinfo/api/v1/getuserrepodetails
 #### Params : userid=<<>>
 
+## Note
+* This code base contains a `Docker` file which is having a openjdk-1.8 runtime env.
+* This code base contains a `ecs` folder which is having task-defenition template for ECS service.
