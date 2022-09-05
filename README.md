@@ -1,5 +1,5 @@
 # GitHub Repository Information project with Spring boot application-REST API
-===================================================================================
+-----------------------------------------------------------------------------
 
 This application REST API will return the GitHub Repository information for the given user.
 
